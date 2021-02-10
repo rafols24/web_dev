@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function add(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a + b;
+document.getElementById("answer").value= c;
+}
+
+function subtract(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a - b;
+document.getElementById("answer").value= c;
+}
+
+function divide(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a / b;
+document.getElementById("answer").value= c;
+}
+
+function multiply(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a * b;
+document.getElementById("answer").value= c;
+}
+//third
+var num1, num2;
+num1 = window.prompt("Input the First integer", "0");
+num2 = window.prompt("Input the second integer", "0");
+                                                 
+if(parseInt(num1, 10) > parseInt(num2, 10)) 
+  { 
+  ("The larger of "+ num1+ " and "+ num2+ " is "+ num1+ ".");
+   document.getElementById("a").value=num1;
+  }   
+else
+  if(parseInt(num2, 10) > parseInt(num1, 10)) 
+  {
+  ("The larger of "+ num1+" and "+ num2+ " is "+ num2+ ".");
+  document.getElementById("a").value=num2
+
+  }                  
+else
+  {
+   console.log("The values "+ num1+ " and "+num2+ " are equal.");
+   document.getElementById("a").value="";
+
+  }
+  
+
+
+</script>
+</head>
+<body>
+    <div style="background-color: rosybrown; margin-left:40px">
+    <p style="color:black;margin-left:30px;">1. CALCULATOR</p><br>
+Enter the First number : <input id="first"><br><br>
+Enter the Second number: <input id="second"><br><br>
+<button onclick="subtract()">subtract</button>
+<button onclick="add()">add</button>
+<button onclick="divide()">divide</button>
+<button onclick="multiply()">multiply</button><br><br>
+answer:<input id="answer">
+</div><br><br><br>
+
+<div>2.</div><br><br>
+
+<div>3.Write a JavaScript program that accept two integers and display the larger</div>
+larger:<prompt id="a">
+
+
+</body>
+
+</html>
